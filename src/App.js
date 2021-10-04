@@ -1,20 +1,16 @@
-import './App'
-
+import Header from "./components/Header";
 
 function App() {
 
-  const startGame = () => {
-    console.log('Starting Game');
-}
-
   return (
-
     <div className="App">
-      <h1>Angry Borgs</h1>
-    
-      <button onClick={startGame}>Sart Game</button>
+      <Header />
     </div>
   );
+}
+
+Header.defaultProps = {
+  title: 'ANGRY BORGS'
 }
 
 export default App;
